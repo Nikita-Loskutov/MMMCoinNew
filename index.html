@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MMMCoin</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <meta name="user-id" content="{{ user_id }}">
 </head>
 <body>
     <div class="container">
-        <div id="username" class="header">Username</div>
+        <div id="username" class="header">{{ username }}</div>
 
         <div class="stats">
             <div class="stat">
@@ -27,7 +28,7 @@
         </div>
 
         <div class="coin" id="coin">
-            <img class="money" src="assets/coin.png">
+            <img class="money" src="/src/assets/coin.png">
             <span id="score">0</span>
         </div>
 
@@ -37,15 +38,14 @@
         </div>
 
         <div id="hamster" class="hamster"></div>
-
-        <div class="nav">
-            <a href="#" class="nav-button">Exchange</a>
-            <a href="#" class="nav-button">Mine</a>
-            <a href="#" class="nav-button">Friends</a>
-            <a href="#" class="nav-button">Earn</a>
-            <a href="#" class="nav-button">Airdrop</a>
-        </div>
     </div>
-    <script src="app.js"></script>
+    <div class="nav">
+        <a href="/" class="nav-button">Exchange</a>
+        <a href="#" class="nav-button">Mine</a>
+        <a href="/friends" class="nav-button">Friends</a>
+        <a href="#" class="nav-button">Earn</a>
+        <a href="/airdrop" class="nav-button">Airdrop</a>
+    </div>
+    <script src="/src/app.js"></script>
 </body>
 </html>
